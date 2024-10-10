@@ -59,10 +59,10 @@
               <a href="accounts.html" class="nav__link">My Account</a>
             </li>
             <li class="nav__item">
-              <a href="compare.html" class="nav__link">Compare</a>
+              <a href="compare.html" class="nav__link active-link">Compare</a>
             </li>
             <li class="nav__item">
-              <a href="login-register.html" class="nav__link active-link"
+              <a href="login-register.html" class="nav__link"
                 >Login</a
               >
             </li>
@@ -100,138 +100,179 @@
           <li><span class="breadcrumb__link">></span></li>
           <li><span class="breadcrumb__link">Shop</span></li>
           <li><span class="breadcrumb__link">></span></li>
-          <li><span class="breadcrumb__link">Checkout</span></li>
+          <li><span class="breadcrumb__link">Compare</span></li>
         </ul>
       </section>
 
-      <!--=============== CHECKOUT ===============-->
-      <section class="checkout section--lg">
-        <div class="checkout__container container grid">
-          <div class="checkout__group">
-            <h3 class="section__title">Billing Details</h3>
-            <form class="form grid">
-              <input type="text" placeholder="Name" class="form__input" />
-              <input type="text" placeholder="Address" class="form__input" />
-              <input type="text" placeholder="City" class="form__input" />
-              <input type="text" placeholder="Country" class="form__input" />
-              <input type="text" placeholder="Postcode" class="form__input" />
-              <input type="text" placeholder="Phone" class="form__input" />
-              <input type="email" placeholder="Email" class="form__input" />
-              <h3 class="checkout__title">Additional Information</h3>
-              <textarea
-                name=""
-                placeholder="order note"
-                class="form__input textarea"
-              ></textarea>
-            </form>
-          </div>
-          <div class="checkout__group">
-            <h3 class="section__title">Cart Totals</h3>
-            <table class="order__table">
-              <thead>
-                <tr>
-                  <th colspan="2">Products</th>
-                  <th>Total</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>
-                    <img
-                      src="./assets/img/product-1-2.jpg"
-                      alt=""
-                      class="order__img"
-                    />
-                  </td>
-                  <td>
-                    <h3 class="table__title">Yidarton Women Summer Blue</h3>
-                    <p class="table__quantity">x 2</p>
-                  </td>
-                  <td><span class="table__price">$180.00</span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      src="./assets/img/product-2-1.jpg"
-                      alt=""
-                      class="order__img"
-                    />
-                  </td>
-                  <td>
-                    <h3 class="table__title">LDB Moon Summer</h3>
-                    <p class="table__quantity">x 1</p>
-                  </td>
-                  <td><span class="table__price">$65.00</span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      src="./assets/img/product-7-1.jpg"
-                      alt=""
-                      class="order__img"
-                    />
-                  </td>
-                  <td>
-                    <h3 class="table__title">Women Short Sleeve Loose</h3>
-                    <p class="table__quantity">x 2</p>
-                  </td>
-                  <td><span class="table__price">$35.00</span></td>
-                </tr>
-                <tr>
-                  <td><span class="order__subtitle">Subtotal</span></td>
-                  <td colspan="2"><span class="table__price">$280.00</span></td>
-                </tr>
-                <tr>
-                  <td><span class="order__subtitle">Shipping</span></td>
-                  <td colspan="2">
-                    <span class="table__price">Free Shipping</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td><span class="order__subtitle">Total</span></td>
-                  <td colspan="2">
-                    <span class="order__grand-total">$280.00</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="payment__methods">
-              <h3 class="checkout__title payment__title">Payment</h3>
-              <div class="payment__option flex">
-                <input
-                  type="radio"
-                  name="radio"
-                  id="l1"
-                  checked
-                  class="payment__input"
-                />
-                <label for="l1" class="payment__label"
-                  >Direct Bank Transfer</label
-                >
-              </div>
-              <div class="payment__option flex">
-                <input
-                  type="radio"
-                  name="radio"
-                  id="l2"
-                  class="payment__input"
-                />
-                <label for="l2" class="payment__label">Check Payment</label>
-              </div>
-              <div class="payment__option flex">
-                <input
-                  type="radio"
-                  name="radio"
-                  id="l3"
-                  class="payment__input"
-                />
-                <label for="l3" class="payment__label">Paypal</label>
-              </div>
-            </div>
-            <button class="btn btn--md">Place Order</button>
-          </div>
-        </div>
+      <!--=============== COMPARE ===============-->
+      <section class="compare container section--lg">
+        <table class="compare__table">
+          <tr>
+            <th>Image</th>
+            <td>
+              <img
+                src="./assets/img/product-2-1.jpg"
+                alt=""
+                class="compare__img"
+              />
+            </td>
+            <td>
+              <img
+                src="./assets/img/product-4-1.jpg"
+                alt=""
+                class="compare__img"
+              />
+            </td>
+            <td>
+              <img
+                src="./assets/img/product-7-1.jpg"
+                alt=""
+                class="compare__img"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <td><h3 class="table__title">Plain Striola Shirts</h3></td>
+            <td><h3 class="table__title">Chen Cardigan</h3></td>
+            <td><h3 class="table__title">Henley Shirt</h3></td>
+          </tr>
+          <tr>
+            <th>Price</th>
+            <td><span class="table__price">$35</span></td>
+            <td><span class="table__price">$67</span></td>
+            <td><span class="table__price">$24</span></td>
+          </tr>
+          <tr>
+            <th>Description</th>
+            <td>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                perferendis nam, fuga reiciendis libero doloremque distinctio.
+              </p>
+            </td>
+            <td>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                perferendis nam, fuga reiciendis libero doloremque distinctio.
+              </p>
+            </td>
+            <td>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                perferendis nam, fuga reiciendis libero doloremque distinctio.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <th>Colors</th>
+            <td>
+              <ul class="color__list compare__colors">
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(37, 100%, 65%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(353, 100%, 65%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(49, 100%, 60%)"
+                  ></a>
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul class="color__list compare__colors">
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(37, 100%, 65%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(353, 100%, 65%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(49, 100%, 60%)"
+                  ></a>
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul class="color__list compare__colors">
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(37, 100%, 65%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(353, 100%, 65%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(49, 100%, 60%)"
+                  ></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Stock</th>
+            <td><span class="table__stock">Out of stock</span></td>
+            <td><span class="table__stock">Out of stock</span></td>
+            <td><span class="table__stock">Out of stock</span></td>
+          </tr>
+          <tr>
+            <th>Weight</th>
+            <td><span class="table__weight">150 gram</span></td>
+            <td><span class="table__weight">150 gram</span></td>
+            <td><span class="table__weight">150 gram</span></td>
+          </tr>
+          <tr>
+            <th>Dimensions</th>
+            <td><span class="table__dimension">N/A</span></td>
+            <td><span class="table__dimension">N/A</span></td>
+            <td><span class="table__dimension">N/A</span></td>
+          </tr>
+          <tr>
+            <th>Buy</th>
+            <td><a href="#" class="btn btm--sm">Add to Cart</a></td>
+            <td><a href="#" class="btn btm--sm">Add to Cart</a></td>
+            <td><a href="#" class="btn btm--sm">Add to Cart</a></td>
+          </tr>
+          <tr>
+            <th>Remove</th>
+            <td><i class="fi fi-rs-trash table__trash"></i></td>
+            <td><i class="fi fi-rs-trash table__trash"></i></td>
+            <td><i class="fi fi-rs-trash table__trash"></i></td>
+          </tr>
+        </table>
       </section>
 
       <!--=============== NEWSLETTER ===============-->
