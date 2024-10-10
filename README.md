@@ -1,4 +1,5 @@
-# A-Responsive-Ecommerce-Website-Project
-A Responsive Ecommerce Website Project With HTML CSS JavaScript
+# Shopping web site - cart item using javascipt
 
-[View Demo](https://billalben.github.io/evara-ecommerce/)
+- ADD ITEMS TO CART - JAVASCRIPT PROJECT
+
+- Function that add item to the cart is coded in js/app.js
